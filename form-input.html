@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form input</title>
+
+    <!-- css eksternal -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <h1>form input data barang</h1>
+    <form action="#">
+
+
+        <input type="hidden" name="id_barang" value="001"> 
+       
+        <label for="nama_barang">nama barang</label> <br>
+        <input type="text" placeholder="masukkan_nama_barang" required name="nama_barang" value="" id="nama_barang">
+        
+        <br><br>
+
+        <label for="jenis_barang">jenis barang</label> <br>
+
+        <input type="radio" name="jenis_barang" value="ATK" id="atk">
+        <label for="atk">ATK</label>
+
+        <input type="radio" name="jenis_barang" required name="jenis_barang" value="elektronik" id="elektronik">
+        <label for="elektronik">ELEKTRONIK</label>
+
+        <br><br>
+
+        <label for="harga_barang">harga barang</label> <br>
+        <input type="number" name="harga_barang"required name="harga_barang" value="" id="harga_barang">
+
+        <br><br>
+
+        <label for="tanggal_barang">tanggal barang</label> <br>
+        <input type="date" name="tanggal_barang"required name="tanggal_barang" value="" id="tanggal_barang">
+
+        <br><br> 
+        
+        <label for="gambar_barang">gambar barang</label> <br>
+        <input type="file" name="gambar_barang"required name="gambar barang" value="" id="gambar_barang">
+         
+        <br><br>
+
+        <label for="email">email</label> <br>
+        <input type="email" name="email"required name="email" value="" id="email">
+         
+        <br><br>
+
+        <label for="password">password</label> <br>
+        <input type="password" name="password" required name="password"value="" id="password">
+        <br></br>
+         
+        <label for="jenis">pilih jenis barang</label> <br>
+        <select name="jenis"  id="jenis">
+            <option value="">pilih</option>
+            <option value="atk">ATK</option>
+            <option value="elektronik">elektronik</option>
+        </select>
+
+        <br><br>
+
+        <label for="deskripsi_barang">deskripsi barang</label> <br>
+        <textarea name="deskripsi_barang" id="" cols="30" rows="10"></textarea>
+
+        <br>
+
+        <!-- tombol dari tag button -->
+        <button type="sumbit">simpan</button>
+        
+    </form>
+    
+</body>
+</html>
